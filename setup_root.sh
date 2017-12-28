@@ -14,7 +14,7 @@ echo 'HOCO_HOME='$HOCO_HOME >> /etc/environment
 whiptail --msgbox "You will now be asked to enter a new password for the pi user" 20 60 1
 passwd pi
 
-useradd -m $HOCO_USER
+useradd -s /bin/bash -m $HOCO_USER
 echo $HOCO_USER' ALL=(ALL) NOPASSWD: ALL' > /etc/sudoers.d/hoco
 adduser $HOCO_USER dialout
 adduser $HOCO_USER gpio
