@@ -31,6 +31,8 @@
 
 # HoCo setup defaults
 setup_defaults.sh
+setup_adapter_defaults.sh
+setup_logic_defaults.sh
 
 # HoCo setup log files
 *.log
