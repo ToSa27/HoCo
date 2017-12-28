@@ -8,3 +8,6 @@ Base Install
   - `wget https://raw.githubusercontent.com/ToSa27/HoCo/master/setup_root.sh`
   - `chmod 755 setup_root.sh`
   - `sudo ./setup_root.sh` (or to log what's going on for later review: `sudo ./setup_root.sh |& tee -a setup_root.log`
+- follow the instructions on screen
+- the pi will reboot several times (no need to login)
+- to check if the setup is complete, login as user `hoco` and check if the file `/opt/hoco/setup/setup_done.log` exists
