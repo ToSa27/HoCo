@@ -82,6 +82,8 @@ fi
 whiptail --yesno "Install HoCo Homematic Adapter?" 20 60 2
 if [ $? -eq 0 ]; then
     echo 'export HOCO_HOMEMATIC=y' >> $HOCO_HOME/setup/setup_adapter_defaults.sh
+    HOCO_HOMEMATIC_KEY=$(whiptail --inputbox "Please enter Homematic security key" 20 60 "" 3>&1 1>&2 2>&3)
+    echo 'export HOCO_HOMEMATIC_KEY='$HOCO_HOMEMATIC_KEY'' >> $HOCO_HOME/setup/setup_adapter_defaults.sh
 fi
 whiptail --yesno "Install HoCo ZigBee Adapter?" 20 60 2
 if [ $? -eq 0 ]; then
